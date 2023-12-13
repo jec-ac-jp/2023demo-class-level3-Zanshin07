@@ -20,6 +20,8 @@ public class Step3Controller {
   public String evening(Comment comment, Model model) {
     model.addAttribute("name", comment.getName());
     model.addAttribute("content", comment.getContent());
+    model.addAttribute("mail", comment.getMail());
+
     // 課題 level2 step3
     // メールアドレスの項目を追加してください。
     return "step3/confirm";
